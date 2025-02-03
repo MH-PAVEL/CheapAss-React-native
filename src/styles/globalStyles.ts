@@ -1,0 +1,125 @@
+"use strict";
+import { StyleSheet } from "react-native";
+import { Colors } from "../theme/Colors";
+import { SCREEN_HEIGHT, SCREEN_WIDTH } from "../theme/Theme";
+import { Typography } from "../theme/Typography";
+
+export const globalStyles = StyleSheet.create({
+  header: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    paddingHorizontal: 36,
+    paddingTop: 26,
+  },
+  user_icon: {
+    width: 90,
+    height: 90,
+    resizeMode: "contain",
+  },
+  benefit_container: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: 4,
+  },
+  circle: {
+    width: 5,
+    height: 5,
+    borderRadius: 3,
+    backgroundColor: "white",
+    marginRight: 10,
+  },
+  benefit_text: {
+    fontSize: 11,
+    color: "white",
+    fontFamily: Typography.regular,
+    fontWeight: "300",
+  },
+  border_bottom: {
+    borderWidth: 1,
+    borderColor: "#E2E2E2",
+    marginTop: 20,
+    marginBottom: 15,
+  },
+  bottom_container: {
+    position: "absolute",
+    bottom: 0,
+    width: SCREEN_WIDTH,
+    backgroundColor: "#212121",
+    alignItems: "flex-end",
+    justifyContent: "center",
+    height: 80,
+    paddingHorizontal: 35,
+  },
+  input_container: {
+    width: "100%",
+    borderWidth: 1,
+    borderColor: "black",
+    borderRadius: 100,
+    paddingHorizontal: 24,
+    paddingVertical: 16,
+    height: 60,
+    backgroundColor: "#212121",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  center_text: {
+    alignItems: "center",
+  },
+  error_text: {
+    color: "red",
+    fontSize: 14,
+    fontWeight: "400",
+    marginTop: 16,
+  },
+  modalView: {
+    marginHorizontal: 16,
+    borderRadius: 10,
+    paddingHorizontal: 16,
+    paddingBottom: 24,
+    alignItems: "center",
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+    elevation: 5,
+    backgroundColor: "#fff",
+    width: SCREEN_WIDTH - 24,
+  },
+  centeredView: {
+    flex: 1,
+    backgroundColor: "#000",
+    justifyContent: "center",
+    alignItems: "center",
+    height: SCREEN_HEIGHT,
+    width: SCREEN_WIDTH,
+  },
+  no_btn: {
+    padding: 8,
+    width: SCREEN_WIDTH / 2 - 50,
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: Colors.primary,
+  },
+  yes_btn: {
+    padding: 8,
+    width: SCREEN_WIDTH / 2 - 50,
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: Colors.primary,
+    backgroundColor: Colors.primary,
+  },
+  btn_container: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    width: "100%",
+    marginTop: 30,
+  },
+});
